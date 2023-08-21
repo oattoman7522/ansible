@@ -1,0 +1,15 @@
+---
+# - name: Install Kubernetes
+#  hosts: HOME
+#  roles:
+#  - kubeadm
+
+- name: Reset cluster
+  hosts: ALLNODES
+  roles:
+  - Resetcluster
+
+    #- name: Init cluster
+    #  hosts: RAOT-TRTAHV-K8SM1
+    #  roles:
+    #  - Newcluster
