@@ -13,14 +13,17 @@
 - name: Set kube config
   ansible.builtin.import_tasks: setkubeconfig.yaml
 
-- name: Install Isito
-  ansible.builtin.import_tasks: Isito.yaml
+# - name: Install Isito
+#   ansible.builtin.import_tasks: Isito.yaml
+
+- name: Install calico
+  ansible.builtin.import_tasks: Installcalico.yaml
 
 - name: Install helm
   ansible.builtin.import_tasks: Installhelm.yaml
 
-- name: Install helm
-  ansible.builtin.import_tasks: Installmonitoring.yaml
+# - name: Install helm
+#   ansible.builtin.import_tasks: Installmonitoring.yaml
 
-- name: InstallNFS.yaml
-  ansible.builtin.import_tasks: InstallNFS.yaml
+# - name: InstallNFS.yaml
+#   ansible.builtin.import_tasks: InstallNFS.yaml
