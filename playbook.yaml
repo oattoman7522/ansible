@@ -9,7 +9,7 @@
 #   roles:
 #   - Resetcluster
 
-- name: Init cluster
+- name: Test Jenkins
   hosts: localhost
   roles:
-  - Installcalico
+  - Promote Vault HA
